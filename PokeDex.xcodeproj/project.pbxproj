@@ -10,7 +10,6 @@
 		4A810FB42972DE9A00BC1BDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A810FB32972DE9A00BC1BDF /* AppDelegate.swift */; };
 		4A810FB62972DE9A00BC1BDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A810FB52972DE9A00BC1BDF /* SceneDelegate.swift */; };
 		4A810FB82972DE9A00BC1BDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A810FB72972DE9A00BC1BDF /* ViewController.swift */; };
-		4A810FBB2972DE9A00BC1BDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A810FB92972DE9A00BC1BDF /* Main.storyboard */; };
 		4A810FBD2972DE9B00BC1BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A810FBC2972DE9B00BC1BDF /* Assets.xcassets */; };
 		4A810FC02972DE9B00BC1BDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A810FBE2972DE9B00BC1BDF /* LaunchScreen.storyboard */; };
 		8E03DD099FCAC9B26E865097 /* Pods_PokeDex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1464D5A1BDF54FFD69CA41A4 /* Pods_PokeDex.framework */; };
@@ -23,7 +22,6 @@
 		4A810FB32972DE9A00BC1BDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A810FB52972DE9A00BC1BDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4A810FB72972DE9A00BC1BDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4A810FBA2972DE9A00BC1BDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A810FBC2972DE9B00BC1BDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A810FBF2972DE9B00BC1BDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A810FC12972DE9B00BC1BDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,8 +46,35 @@
 				4E444851521EC8C25A46BB1A /* Pods-PokeDex.debug.xcconfig */,
 				3CE33060BEF93A81E5EA1F12 /* Pods-PokeDex.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		4A7B82402978501700749543 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4A7B82412978502700749543 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4A7B82422978503D00749543 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A7B82432978504700749543 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		4A810FA72972DE9A00BC1BDF = {
@@ -73,10 +98,13 @@
 		4A810FB22972DE9A00BC1BDF /* PokeDex */ = {
 			isa = PBXGroup;
 			children = (
+				4A7B82432978504700749543 /* Cells */,
+				4A7B82422978503D00749543 /* Models */,
+				4A7B82412978502700749543 /* ViewModels */,
+				4A7B82402978501700749543 /* View */,
 				4A810FB32972DE9A00BC1BDF /* AppDelegate.swift */,
 				4A810FB52972DE9A00BC1BDF /* SceneDelegate.swift */,
 				4A810FB72972DE9A00BC1BDF /* ViewController.swift */,
-				4A810FB92972DE9A00BC1BDF /* Main.storyboard */,
 				4A810FBC2972DE9B00BC1BDF /* Assets.xcassets */,
 				4A810FBE2972DE9B00BC1BDF /* LaunchScreen.storyboard */,
 				4A810FC12972DE9B00BC1BDF /* Info.plist */,
@@ -154,7 +182,6 @@
 			files = (
 				4A810FC02972DE9B00BC1BDF /* LaunchScreen.storyboard in Resources */,
 				4A810FBD2972DE9B00BC1BDF /* Assets.xcassets in Resources */,
-				4A810FBB2972DE9A00BC1BDF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,14 +243,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4A810FB92972DE9A00BC1BDF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4A810FBA2972DE9A00BC1BDF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4A810FBE2972DE9B00BC1BDF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -362,7 +381,6 @@
 				INFOPLIST_FILE = PokeDex/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -391,7 +409,6 @@
 				INFOPLIST_FILE = PokeDex/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
